@@ -1,0 +1,12 @@
+-------------
+TABLE: object
+-------------
+objId		BIGINT
+objAuthorName	NVARCHAR(256)
+objDescription	NVARCHAR(256)
+objType		VARCHAR(32)	e.g. Music, Conversation, etc
+objLyric	NVARCHAR(MAX)
+objMediaLink	VARCHAR(512)
+objCreatedDateUTC	DATETIME DEFAULT(GETUTCTDATE())
+objLastUpdatedDateUTC	DATETIME DEFAULT(GETUTCTDATE())
+objIsActive	BIT DEFAULT(0)
