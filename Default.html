@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Test</title>
+</head>
+<body onload="loadSong()">
+    <h1>Listen And Type - Test of Game Concept</h1>
+    <div>
+        <br/>
+        <label id="lblSong">Song Name:</label><br/>
+        <label id="lblArtist">Artist Name:</label> <br/>
+    </div>
+    <div>
+        <br/>
+        <label id="lblTotalWordsLeft">Total Guesses: 10</label> <label>/</label> <label id="lblTotalWordCount">98</label> <br/>
+        <label id="lblTotalDistinctWord">Distinct Words: 90</label> <br/>
+		<label id="lblCountCorrectGuesses">Incorrect Guesses: 43</label> <br/>
+    </div>	
+	
+	
+    <div id="container">
+    </div>    
+    <div>
+        <br/>
+        <input id="txtEnter" type="text" placeholder ="Enter text" onkeydown="if (event.keyCode == 13) document.getElementById('btnText').click()"/>
+        <button id="btnText" type="submit" onclick="guessWord(document.getElementById('txtEnter').value)">Guess</button>  
+    </div>
+</body>
+<footer>
+	<script type = "text/javascript" src="js\javascript.js"></script> 
+</footer>
+</html>
