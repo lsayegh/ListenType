@@ -1,6 +1,6 @@
--------------
+--------------
 TABLE: object
--------------
+--------------
 objId		BIGINT
 objAuthorName	NVARCHAR(256)
 objDescription	NVARCHAR(256)
@@ -10,3 +10,4 @@ objMediaLink	VARCHAR(512)
 objCreatedDateUTC	DATETIME DEFAULT(GETUTCTDATE())
 objLastUpdatedDateUTC	DATETIME DEFAULT(GETUTCTDATE())
 objIsActive	BIT DEFAULT(0)
+
